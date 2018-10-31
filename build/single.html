@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head lang="eng">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#fff">
+    <title>Webshop</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="bower_comp/semantic/dist/semantic.css">
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_comp/swiper/dist/css/swiper.css" />
+    <link rel="stylesheet" href="bower_comp/components-font-awesome/css/fontawesome-all.css" />
+    <!-- endbower -->
+</head>
+<body>
+
+<!--begin header-->
+<header class="header">
+    <div class="container">
+        <div class="header__wrapper header_wrap">
+            <!--begin logo-->
+            <div class="header_wrap__logo">
+                <a href="/">
+                    <img src="img/logo.png" alt="Logo">
+                </a>
+            </div>
+            <!--end logo-->
+            <!--begin basket-->
+            <div class="header_wrap__basket">
+                <a href="#/">
+                    <i class="fas fa-shopping-basket"></i>
+                    <span>1</span>
+                    Warenkorb
+                </a>
+            </div>
+            <!--begin basket-->
+        </div>
+    </div>
+</header>
+<!--end header-->
+
+<!--begin single product-->
+<section class="single_product">
+    <div class="container">
+        <div class="single_product__wrapper single_product_wrap">
+            <!--begin single slider-->
+            <div class="single_product_wrap__slider">
+                <div class="swiper-container gallery-top">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/img_product_1.jpg" alt="img">
+                            <p>Afpel-Raffel "Clever" image 1</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/img_product_1.jpg" alt="img">
+                            <p>Afpel-Raffel "Clever" image 2</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/img_product_3.jpg" alt="img">
+                            <p>Afpel-Raffel "Clever" image 3</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/XIMLoLxmTDw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <p>Afpel-Raffel "Clever" Video</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-container gallery-thumbs">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/img_product_1.jpg" alt="img"></div>
+                        <div class="swiper-slide"><img src="img/img_product_1.jpg" alt="img"></div>
+                        <div class="swiper-slide"><img src="img/img_product_3.jpg" alt="img"></div>
+                        <div class="swiper-slide">
+                           video
+                        </div>
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"><i class="fas fa-chevron-right"></i></div>
+                    <div class="swiper-button-prev"><i class="fas fa-chevron-left"></i></div>
+                </div>
+            </div>
+            <!--end single slider-->
+            <!--begin single info-->
+            <div class="single_product_wrap__info single_info">
+                <div class="single_info__title">
+                    <h1 class="title">Afpel-Raffel "Clever"</h1>
+                </div>
+                <div class="single_info__price single_price">
+                    <div class="single_price__current">
+                        <p>CHF 21.90</p>
+                    </div>
+                    <div class="single_price__old">
+                        <p>25.90 ohne Abo</p>
+                    </div>
+                </div>
+                <div class="single_info__delivery">
+                    <p>Sofort lieferbar</p>
+                </div>
+                <div class="single_info__number">
+                    <div class="numbers">
+                        <label class="numbers__minus">
+                            <input type='button' value='' class='minus' field='quantity' />
+                        </label>
+                        <input type='text' name='quantity' value='1' class='value' min="1" />
+                        <label class="numbers__plus">
+                            <input type='button' value='' class='plus' field='quantity' />
+                        </label>
+                    </div>
+                </div>
+                <div class="single_info__btn">
+                    <a class="btn_red" href="#/">
+                        <i class="fas fa-shopping-basket"></i>
+                        Warenkorb
+                    </a>
+                </div>
+            </div>
+            <!--end single info-->
+        </div>
+        <div class="single_product__text">
+            <h2>Vortelie</h2>
+            <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                <li>A debitis distinctio doloribus laboriosam similique.</li>
+                <li>Ab, asperiores at hic mollitia necessitatibus quia repudiandae rerum vero!</li>
+                <li>Aliquid atque consequatur sed tempora ullam.</li>
+                <h2>Beschreibung</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus amet aperiam architecto corporis eos exercitationem fugiat incidunt odio quia, quos ratione saepe sequi similique vitae voluptatum. Dolores obcaecati odit rerum?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid amet, cumque distinctio dolor dolorem eius fuga in ipsam iusto laborum laudantium nostrum porro quo reiciendis rerum, suscipit voluptate voluptatum!</p>
+            </ul>
+        </div>
+    </div>
+</section>
+<!--begin single product-->
+
+<!--begin footer-->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__wrapper footer_item">
+            <div class="footer_item__title">
+                <h3 class="title">Haben Sie Fragen</h3>
+            </div>
+            <div class="footer_item__text">
+                <p>Wir helfen gerne weiter</p>
+            </div>
+            <div class="footer_item__form">
+                <form>
+                    <input type="email" placeholder="Email">
+                    <input class="btn_red" type="submit" value="Subscribe">
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--end footer-->
+
+<!-- bower:js -->
+<script src="bower_comp/jquery/dist/jquery.js"></script>
+<script src="bower_comp/semantic/dist/semantic.js"></script>
+<script src="bower_comp/swiper/dist/js/swiper.js"></script>
+<!-- endbower -->
+<!-- Scripts -->
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

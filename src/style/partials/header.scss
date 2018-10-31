@@ -1,0 +1,56 @@
+// Header
+
+.header {
+  padding: 20px 0 0 0;
+  border-bottom: 1px solid $color_grey;
+  margin-bottom: 50px;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.header_wrap {
+  position: relative;
+  &__logo {
+    img {
+      position: absolute;
+      top: 0;
+      width: 170px;
+    }
+  }
+  &__basket {
+    a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: $color_grey;
+      font-size: 10px;
+      text-transform: uppercase;
+      position: relative;
+      transition: 0.5s;
+      &:hover {
+        transition: 0.5s;
+        color: $color_black;
+      }
+      i {
+        font-size: 20px;
+        color: $color_black;
+      }
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 13px;
+        top: 5px;
+        background-color: red;
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+        color: white;
+      }
+    }
+  }
+}

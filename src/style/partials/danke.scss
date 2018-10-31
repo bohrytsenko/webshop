@@ -1,0 +1,18 @@
+// Danke
+
+.danke {
+  padding: 50px 0;
+  &__title {
+    margin-bottom: 30px;
+    .title {
+      color: $color_black;
+      font-size: 26px;
+    }
+  }
+  &__btn {
+    a {
+      min-width: 500px;
+      display: inline-flex;
+    }
+  }
+}
