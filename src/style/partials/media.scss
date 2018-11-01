@@ -57,6 +57,30 @@ body {
         margin-bottom: 20px;
       }
     }
+    .footer_item__form form {
+      flex-direction: column;
+      input {
+        width: 200px;
+        margin: 0 auto 20px auto;
+      }
+      input[type="email"] {
+        border-bottom-left-radius: 3px;
+        border-top-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+        border-top-right-radius: 3px;
+        border: 1px solid silver;
+      }
+      input[type="text"] {
+        border-bottom-left-radius: 3px;
+        border-top-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+        border-top-right-radius: 3px;
+      }
+      input[type="submit"] {
+        border-bottom-left-radius: 3px;
+        border-top-left-radius: 3px;
+      }
+    }
   }
   // break min 768 max-1200
   @media only screen and (min-width: $r-768) and (max-width: $r-1200) {

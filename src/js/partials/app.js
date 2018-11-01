@@ -4,13 +4,13 @@ $( document ).ready(function() {
 
     var galleryTop = new Swiper('.gallery-top', {
         spaceBetween: 10,
+        loop: true,
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
         breakpoints: {
             768: {
-                loop: true,
                 loopedSlides: 3
             }
         }
@@ -21,9 +21,9 @@ $( document ).ready(function() {
         centeredSlides: true,
         touchRatio: 0.2,
         slideToClickedSlide: true,
+        loop: true,
         breakpoints: {
             768: {
-                loop: true,
                 loopedSlides: 3
             }
         }

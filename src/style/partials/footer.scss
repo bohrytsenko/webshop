@@ -26,18 +26,30 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      input[type="email"] {
+      input[type="email"],
+      input[type="text"] {
         border: 1px solid $color_grey;
         color: $color_black;
         font-size: 14px;
         height: 40px;
         padding-left: 10px;
-        border-bottom-left-radius: 3px;
-        border-top-left-radius: 3px;
         &::placeholder {
           color: $color_grey;
           font-size: 14px;
         }
+      }
+      input[type="email"] {
+        border-bottom-left-radius: 3px;
+        border-top-left-radius: 3px;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+        border-right: 0;
+      }
+      input[type="text"] {
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
       }
       input[type="submit"] {
         border-bottom-left-radius: 0;
