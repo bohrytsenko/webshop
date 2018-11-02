@@ -10,6 +10,7 @@ $( document ).ready(function() {
         },
         loop: true,
         loopedSlides: 4,
+        noSwiping: true,
         breakpoints: {
             768: {
                 loopedSlides: 3
@@ -20,6 +21,7 @@ $( document ).ready(function() {
     var galleryThumbs = new Swiper('.gallery-thumbs', {
         spaceBetween: 10,
         centeredSlides: true,
+        noSwiping: true,
         slidesPerView: 'auto',
         touchRatio: 0.2,
         slideToClickedSlide: true,
