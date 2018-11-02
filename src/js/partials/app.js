@@ -9,35 +9,22 @@ $( document ).ready(function() {
             prevEl: '.swiper-button-prev',
         },
         loop: true,
-        loopedSlides: 4,
         noSwiping: true,
-        breakpoints: {
-            768: {
-                loopedSlides: 3
-            }
-        }
+        loopedSlides: 4
     });
-
     var galleryThumbs = new Swiper('.gallery-thumbs', {
         spaceBetween: 10,
         centeredSlides: true,
-        noSwiping: true,
         slidesPerView: 'auto',
         touchRatio: 0.2,
+        noSwiping: true,
         slideToClickedSlide: true,
         loop: true,
-        loopedSlides: 4,
-        breakpoints: {
-            768: {
-                loopedSlides: 3
-            }
-        }
+        loopedSlides: 4
     });
 
-    if (document.querySelector('.gallery-thumbs') !== null) {
-        galleryTop.controller.control = galleryThumbs;
-        galleryThumbs.controller.control = galleryTop;
-    }
+    galleryTop.controller.control = galleryThumbs;
+    galleryThumbs.controller.control = galleryTop;
 
     // Numbers
 
