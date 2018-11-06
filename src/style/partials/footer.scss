@@ -23,11 +23,32 @@
   }
   &__form {
     form {
+      width: 250px;
+      max-width: 100%;
+      margin: 0 auto;
       display: flex;
       align-items: center;
       justify-content: center;
+      flex-direction: column;
+      textarea {
+        width: 100%;
+        border: 1px solid $color_grey;
+        color: $color_black;
+        font-size: 14px;
+        height: 40px;
+        min-height: 60px;
+        padding-left: 10px;
+        margin-bottom: 10px;
+        border-radius: 3px;
+        &::placeholder {
+          color: $color_grey;
+          font-size: 14px;
+        }
+      }
       input[type="email"],
       input[type="text"] {
+        margin-bottom: 10px;
+        width: 100%;
         border: 1px solid $color_grey;
         color: $color_black;
         font-size: 14px;
@@ -38,23 +59,7 @@
           font-size: 14px;
         }
       }
-      input[type="email"] {
-        border-bottom-left-radius: 3px;
-        border-top-left-radius: 3px;
-        border-bottom-right-radius: 0;
-        border-top-right-radius: 0;
-        border-right: 0;
-      }
-      input[type="text"] {
-        border-bottom-left-radius: 0;
-        border-top-left-radius: 0;
-        border-bottom-right-radius: 0;
-        border-top-right-radius: 0;
-      }
-      input[type="submit"] {
-        border-bottom-left-radius: 0;
-        border-top-left-radius: 0;
-      }
+
     }
   }
 }
