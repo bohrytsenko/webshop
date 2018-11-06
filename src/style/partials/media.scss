@@ -23,8 +23,20 @@ body {
         width: 100%;
       }
     }
-    .gallery-thumbs .swiper-button-next, .gallery-thumbs .swiper-button-prev {
-      display: none;
+    .gallery-thumbs {
+      width: 85%;
+      .swiper-button-prev,
+      .swiper-button-next {
+        height: 102px;
+        width: 15px;
+        border-radius: 5px;
+      }
+      .swiper-button-prev {
+        left: -10px;
+      }
+      .swiper-button-next {
+        right: -10px;
+      }
     }
     .gallery-thumbs .swiper-slide{
       width: 100px!important;
